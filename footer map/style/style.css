@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 110vh;
+    display: flex;
+    align-items: end;
+}
+
+:root{
+    --width-map-footr: 450px;
+    --height-map-footr: 400px;
+
+    --map-loction:#f60101;
+    --footer-box:#247bb0;
+    --clr-text-footer:#242424;
+    --clr-text-active-footer:#ff8c00;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(../Vazir.ttf) format('woff');
+}
+.box_map{
+    position: relative;
+    width: var(--width-map-footr);
+}
+.box_map iframe{
+    width: var(--width-map-footr);
+    height: var(--height-map-footr);
+}
+.icon__map{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--map-loction);
+    font-size: 40px;
+}
+
+footer{
+    /* height: 500px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    clip-path: polygon(
+        0 0,
+        0 100%,
+        100% 100%,
+        100% 54px
+    );
+    background-color: var(--footer-box);
+}
+footer .conteiner{
+    width: 80%;
+}
+.box_footr{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+.box_footr>div{
+    margin: 10px 0;
+}
+footer p,address, pre{
+    display: inline;
+    margin: 0;
+    padding: 0;
+    color: var(--clr-text-footer);
+}
+.box_text{
+
+    width: 40%;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.box_text ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.box_text ul>li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 18px;
+}
+.box_text p, address{
+    font-family: myFont !important;
+    font-weight: bold;
+    font-style: normal;
+}
+.box_text p{
+    width: 90px;
+    color: var(--clr-text-footer) ;
+    position: relative;
+}
+.box_text p::after{
+    content: "";
+    position: absolute;
+    bottom: -8px !important;
+    left: 0 !important;
+    right: -6px;
+    height: 4px;
+    background-color:var(--clr-text-active-footer);
+    border-radius: 4px;
+}
+@media (770px <= width <=970px) {
+    .box_footr{
+        flex-direction: column;
+        margin: 30px 0;
+        align-items: center;
+    }
+
+    .box_text{
+        width: 60%;
+    }
+}
+@media (0px <= width <=770px) {
+    .box_footr{
+        flex-direction: column;
+        margin: 30px 0;
+        align-items: center;
+    }
+    .box_text{
+        width: 80%;
+    }
+}

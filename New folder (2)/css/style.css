@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --white:#fff;
+    --hover:#d7d7d7;
+    --blue:#42b9df;
+}
+header{
+    background: var(--blue);
+    color: var(--white) !important;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+header .headar_box{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* img box  */
+.box_img{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* text box  */
+.box_text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.box_text h1{
+    font-size: 60px;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+    margin: 25px 0;
+    font-family: 'Concert One', sans-serif;
+
+}
+.box_text p{
+    line-height: 27px;
+    margin: 0;
+}
+.box_text a{
+    color: var(--white);
+}
+.box_text i{
+    margin: 20px 0;
+}
+.box_text button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white) ;
+    width: 130px;
+    padding: 20px 0;
+    font-size: 20px;
+    border: none;
+    border-radius: 2px;
+    font-weight:700;
+    transition: all 0.1s;
+}
+.box_text button:hover{
+    background-color: var(--hover) ;
+}
+.box_text button svg{
+    width: 20px;
+    padding: 0 5px;
+    transform: rotate(180deg);
+}
+
+@media (0px <= width <= 768px) {
+    header{
+        height: auto;
+    }
+    .box_img{
+        margin-top: 40px;
+        flex-direction: column;
+    }
+    .box_img img{
+        margin: 5px 0;
+        width: 100% !important;
+    }
+}
