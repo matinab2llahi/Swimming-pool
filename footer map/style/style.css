@@ -51,10 +51,15 @@ body{
 .custom-shape-divider-top-1708069838 svg {
     position: relative;
     display: block;
-    width: calc(111% + 1.3px);
-    height: 78px;
+    width: calc(100% + 1.3px);
+    height: 100px;
+    animation: wave 20s cubic-bezier(0.64, 0.17, 0.43, 0.96) infinite ;
 }
-
+@keyframes wave {
+    50%  {
+        width: calc(200% + 1.3px);
+    }
+}
 .custom-shape-divider-top-1708069838 .shape-fill {
     fill: #FFFFFF;
 }
