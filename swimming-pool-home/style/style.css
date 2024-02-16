@@ -291,9 +291,7 @@ footer .box_text p i{
         height: 180px !important;
     }
 }
-@media (530px <= width <=840px) {
-
-
+@media (510px <= width <=840px) {
     header .box_text h1{
         font-size: 30px;
     }
@@ -326,5 +324,55 @@ footer .box_text p i{
     .box_img img{
         margin: 5px 0;
         width: 100% !important;
+    }
+
+}
+@media (320px <= width <=510px) {
+    footer .box_text p{
+        width: 80px;
+    }
+    header .box_text h1{
+        font-size: 30px;
+    }
+    header .headar_box{
+        margin-bottom: 20px !important;
+    }
+    .splide__slide img{
+        width: 100px;
+        height: 100px !important;
+    }
+    .box_footr{
+        width: 90% !important;
+        flex-direction: column;
+        /* margin: 30px 0; */
+        margin: 0;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+    footer .box_text{
+        width: 100%;
+    }
+
+    footer .box_map{
+        position: relative;
+        width: 320px;
+    }
+    footer .box_map iframe{
+        width: 320px;
+        height: 300px;
+    }
+    header{
+        height: auto;
+    }
+    .box_img{
+        margin-top: 40px;
+        flex-direction: column;
+    }
+    .box_img img{
+        margin: 5px 0;
+        width: 100% !important;
+    }
+    footer .box_text ul>li{
+        font-size: 13px;
     }
 }
