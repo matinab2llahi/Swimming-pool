@@ -114,12 +114,13 @@ footer p,address, pre{
     font-style: normal;
 }
 .box_text p{
+    align-items: center;
     width: 114px;
     color: var(--clr-text-active-footer) ;
     position: relative;
     display: flex;
     justify-content: space-between;
-    padding: 0 8px;
+    padding: 6px 8px;
 }
 .box_text p::after{
     content: "";
@@ -139,7 +140,9 @@ footer p,address, pre{
 @media (770px <= width <=1150px) {
     .box_footr{
         flex-direction: column;
-        margin: 30px 0;
+        /* margin: 30px 0; */
+        margin: 0;
+        margin-bottom: 10px;
         align-items: center;
         
     }
@@ -152,7 +155,9 @@ footer p,address, pre{
     .box_footr{
         width: 90% !important;
         flex-direction: column;
-        margin: 30px 0;
+        /* margin: 30px 0; */
+        margin: 0;
+        margin-bottom: 10px;
         align-items: center;
     }
     .box_text{
