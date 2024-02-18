@@ -3,13 +3,15 @@
     --slider:#247bb0;
     --footer:#42b9df;
     --slider-height:100vh;
-    
+    --black:#000;
     
     --width-map-footr: 450px;
     --height-map-footr: 400px;
     
     
-    
+    --th-table-time:#42b9df;
+    --td-odd-table-time:#86e1ff;
+    --td-even-table-time:#cdcdcd;
     --white:#fff;
     --hover:#d7d7d7;
     --map-loction:#f60101;
@@ -60,6 +62,7 @@ header .headar_box{
 
 /* text box  */
 header .box_text{
+    font-family: myFont !important;
     display: flex;
     flex-direction: column;
     margin-top: 10px;
@@ -70,7 +73,7 @@ header .box_text h1{
     margin: 0;
     padding: 0;
     margin: 25px 0;
-    font-family: 'Concert One', sans-serif;
+    
 
 }
 header .box_text p{
@@ -86,13 +89,14 @@ header .box_text i{
 }
 header .box_text button{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: var(--white) ;
     width: 130px;
     padding: 20px 0;
     font-size: 20px;
     border: none;
+    font-family: myFont !important;
     border-radius: 2px;
     font-weight:700;
     transition: all 0.1s;
@@ -105,13 +109,51 @@ header .box_text button svg{
     padding: 0 5px;
     transform: rotate(180deg);
 }
+/* table time */
+
+.sct_table_time{
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sct_table_time table{
+    font-family: myFont !important;
+    border-radius: 10px;
+    width:80% ;
+    border-radius: 10px;
+    overflow: hidden;
+    border-spacing:0;
+}
+.sct_table_time table th,td{
+    text-align: center;
+    width: 40px;
+    padding: 0;
+    margin: 0;
+    padding: 15px 0;
+}
+    /* th  */
+.sct_table_time tr:first-child{
+    background-color: var(--th-table-time) !important;
+    color: var(--black) !important;
+
+}
+
+    /* td */
+.sct_table_time tr:nth-child(odd){
+
+    background-color: var(--td-odd-table-time);
+}
+.sct_table_time tr:nth-child(even){
+
+    background-color: var(--td-even-table-time);
+}
 /* slider  */
 
 .slider_box{
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    /* height: 100%; */
     background-color: var(--slider);
     height: var(--slider-height);
 }
@@ -286,6 +328,9 @@ footer .box_text p i{
     header .headar_box{
         margin-bottom: 20px !important;
     }
+    .slider_box{
+        height: 80vh;
+    }
     .splide__slide img{
         width: 260px;
         height: 180px !important;
@@ -297,6 +342,21 @@ footer .box_text p i{
     }
     header .headar_box{
         margin-bottom: 20px !important;
+    }
+
+    .sct_table_time{
+    }
+    .sct_table_time table{
+        scale: .8;
+        width: 100%;
+    }
+    .sct_table_time table th,td{
+        width: 80px;
+        font-size: 14px;
+    }
+
+    .slider_box{
+        height: 40vh;
     }
     .splide__slide img{
         width: 160px;
@@ -336,6 +396,20 @@ footer .box_text p i{
     }
     header .headar_box{
         margin-bottom: 20px !important;
+    }
+    .sct_table_time{
+    }
+    .sct_table_time table{
+        /* scale: .7; */
+        width: 95%;
+    }
+    .sct_table_time table th,td{
+        width: 140px;
+        font-size: 9px;
+
+    }
+    .slider_box{
+        height:40vh;
     }
     .splide__slide img{
         width: 100px;
